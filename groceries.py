@@ -57,4 +57,4 @@ def department_products(dept):
 
 # loop and print each department name in alphabetical order
 for d in sorted(unique_departments):
-    print(" + " + d.title() + " (" + str(len(department_products(d))) + " products)")
+    print(" + " + d.title() + " (" + str(len(department_products(d))) + (" product)" if len(department_products(d)) == 1 else " products)"))
